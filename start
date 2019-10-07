@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -o errexit
+set -o nounset
+
+sudo /etc/init.d/ssh restart
+
+tail -f /dev/null

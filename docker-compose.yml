@@ -1,0 +1,16 @@
+version: '2'
+services:
+  ubuntu:
+    container_name: ubuntu1604
+    build:
+        context: .
+        dockerfile: ./Dockerfile
+    ports:
+      - "2222:22"
+#      - "80:80"
+    environment:
+      - TZ="Asia/Seoul"
+    volumes:
+      - ./home:/home
+    command: ["start"]
+#    command: ["tail", "-f", "/dev/null"]
