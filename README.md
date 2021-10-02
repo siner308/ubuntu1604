@@ -9,8 +9,8 @@ user생성과 패스워드 설정을 할 수 있고, `ssh`를 통한 접근이 �
 1. 도커 설치하기
 
     [도커사이트](https://docs.docker.com/get-docker/)에서 자신의 운영체제에 맞는 도커를 설치합니다.
-   - 만약 당신이 MacOS를 사용한다면, Docker Destop을 설치할 수 있습니다. 
-   - 만약 당신이 ```sudo``` 없이 사용하고 싶다면, 도커를 설치한 후 터미널에서 다음 명령어를 이용하십시오.
+   - 만약 MacOS를 사용한다면, Docker Destop을 설치할 수 있습니다. 
+   - 만약 ```sudo``` 없이 사용하고 싶다면, 도커를 설치한 후 터미널에서 다음 명령어를 이용하십시오.
   
         ```bash
         $ sudo usermod -aG docker $USER
@@ -80,7 +80,7 @@ You can test the web server simply by configuring additional ports.
 
 ### Clone & Run
 
-1. clone this repository
+1. Clone this repository
    ```bash
    $ git clone https://gitub.com/siner308/ubuntu1604
    ```
@@ -93,14 +93,14 @@ You can test the web server simply by configuring additional ports.
     ```bash
     $ docker-compose up -d # execute container in background
     ```
-- check running conatainer
+- Check running conatainer
     ```bsah
     $ docker ps # check ubuntu is running
     ```
 > -d option after docker-compose up will docker can be run background.
 
-1. Accessing a running ubuntu container 
-    you can access ubuntu1604 using following commnad:
+3. Accessing a running ubuntu container 
+    You can access ubuntu1604 using following command:
      ```bash
      $ docker exec -it ubuntu1604 bash
      ```
