@@ -12,7 +12,9 @@ user생성과 패스워드 설정을 할 수 있고, `ssh`를 통한 접근이 �
    - 만약 당신이 MacOS를 사용한다면, Docker Destop을 설치할 수 있습니다. 
    - 만약 당신이 ```sudo``` 없이 사용하고 싶다면, 도커를 설치한 후 터미널에서 다음 명령어를 이용하십시오.
   
-    ```sudo usermod -aG docker $USER```
+        ```bash
+        $ sudo usermod -aG docker $USER
+        ```
 
 2. Docker compose 설치하기
 
@@ -23,28 +25,28 @@ user생성과 패스워드 설정을 할 수 있고, `ssh`를 통한 접근이 �
 
 1. 레포지토리 복제
 
-   ```console
+   ```bash
    $ git clone https://gitub.com/siner308/ubuntu1604
    ```
 
 2. 실행하기
   - 복제한 폴더로 이동
-    ```console
+    ```bash
     $ cd ubuntu1604
     ```
    - 실행하기
-     ```console 
+     ```bash
      $ docker-compose up -d #컨테이너를 백그라운드에서 실행합니다.
      ```
    - 실행중인 컨테이너 확인하기
-     ```console
+     ```bash
      $ docker ps #ubuntu가 실행중인지 확인합니다
      ```
 > docker-compose up 뒤에 -d 옵션은 도커를 백그라운드에서 실행할 수 있게 해줍니다.
 3. 실행중인 도커에 접근하기
 
     다음 명령어를 통해서 unbuntu1604 컨테이너에 접근할 수 있습니다.
-    ```console
+    ```bash
     $ docker exec -it ubuntu1604 bash
     ```
 
@@ -62,7 +64,7 @@ You can test the web server simply by configuring additional ports.
    Visit [this website](https://docs.docker.com/get-docker/) and install docker what your os supports.
    - If you are using MacOS, you can install docker desktop.
    - If you want to use docker without ```sudo```, After installing Docker,Run the following command on your Unix system.   
-        ```console
+        ```bash
         sudo usermod -aG docker $USER
         ``` 
 
@@ -74,27 +76,27 @@ You can test the web server simply by configuring additional ports.
 ### Clone & Run
 
 1. clone this repository
-   ```console
+   ```bash
    $ git clone https://gitub.com/siner308/ubuntu1604
    ```
 2. Run docker
  - Move to the cloned repository. 
-    ```console
+    ```bash
     $ cd ubuntu1604
     ```
 - Run Docker in background
-    ```console
+    ```bash
     $ docker-compose up -d # execute container in background
     ```
 - check running conatainer
-    ```console
+    ```bsah
     $ docker ps # check ubuntu is running
     ```
 > -d option after docker-compose up will docker can be run background.
 
 1. Accessing a running ubuntu container 
     you can access ubuntu1604 using following commnad:
-     ```console
+     ```bash
      $ docker exec -it ubuntu1604 bash
      ```
 
