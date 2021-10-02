@@ -49,7 +49,12 @@ user생성과 패스워드 설정을 할 수 있고, `ssh`를 통한 접근이 �
     ```bash
     $ docker exec -it ubuntu1604 bash
     ```
-
+4. 컨테이너 종료하기
+    다음 명령어를 통해서 컨테이너를 종료할 수 있습니다.
+    ```bash
+    $ docker-compose down
+    ```
+    
 ---
 This is a repo for ease of using Ubuntu containers.
 
@@ -100,3 +105,9 @@ You can test the web server simply by configuring additional ports.
      $ docker exec -it ubuntu1604 bash
      ```
 
+4. Down container
+    You can down container using following command:
+    ```bash
+    $ docker-compose down
+    ```
+    
